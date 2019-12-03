@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2> Produkty dostępne w sklepie W@S:</h2>
+    <ul>
+        {% for p in products %}
+        <li>
+            <h3><a href="http://127.0.0.1:8000/product/{{p.id}}">{{p.name}}</a></h3>
+            <h4>Cena: {{p.price}} zł</h4>
+        </li>
+        {% endfor %}
+    </ul>
+{%endblock%}

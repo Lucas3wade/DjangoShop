@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2> Szczegóły produktu => {{product.name}}:  </h2>
+    <ul>
+        <li>
+            <h4>Opis: {{product.description}}</h4>
+        </li>
+        <li>
+            <h4>Waga: {{product.weight}}</h4>
+        </li>
+    </ul>
+<h3><a href="/products"><=Wróć </a></h3>
+{%endblock%}
