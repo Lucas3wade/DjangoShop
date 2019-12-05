@@ -7,6 +7,8 @@ urlpatterns = [
     path('glowna/<str:imie>', views.index),
     path('products/', views.product_list),
     path('product/<int:product_id>', views.product_details),
-    path('', views.main_site)
+    path('', views.main_site),
+    path("order/<int:order_id>", views.order_details),
+    path("order/", views.order)
 
 ]

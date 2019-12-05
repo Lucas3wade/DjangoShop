@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f174c75-0dae-42ed-b8a0-9579693296de" name="Default Changelist" comment="" />
+    <list default="true" id="7f174c75-0dae-42ed-b8a0-9579693296de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/was.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/was.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +26,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1TlNZe5gsorvHnNcN3yrKe5Vwha" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +38,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/bin" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -55,9 +73,19 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1575404833360">
+    <state x="765" y="310" width="495" height="484" key="FileChooserDialogImpl" timestamp="1575409026618">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1575404833360" />
+    <state x="765" y="310" width="495" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1575409026618" />
+    <state x="346" y="38" key="SettingsEditor" timestamp="1575562749809">
+      <screen x="67" y="27" width="1301" height="741" />
+    </state>
+    <state x="346" y="38" key="SettingsEditor/67.27.1301.741@67.27.1301.741" timestamp="1575562749809" />
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1575409091941" />
+    <state x="476" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1575562386212">
+      <screen x="67" y="27" width="1301" height="741" />
+    </state>
+    <state x="476" y="275" key="com.intellij.ide.util.TipDialog/67.27.1301.741@67.27.1301.741" timestamp="1575562386211" />
+    <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1575408292401" />
   </component>
 </project>

@@ -1,6 +1,9 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from .models import Product
+from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect
+
+from .forms import OrderForm
+from .models import Product, Order
+
 # Create your views here.
 
 products = [
@@ -24,7 +27,10 @@ def product_list(request):
         "sklep/list.html",
         context
     )
-
+def order_details(request, order_id):
+    order = get_object_or_404(Order, pk=order_id)
+    total_price = order.get_total_price()
+    return HttpResponse(total_price)
 
 def product_details(request, product_id):
     product = Product.objects.get(id=product_id)
@@ -33,3 +39,21 @@ def product_details(request, product_id):
         request,
         "sklep/product_details.html",
         context)
+
+def order(request):
+    if request.method == "POST":
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            order = Order(
+                first_name = form.cleaned_data['first_name'],
+                last_name = form.cleaned_data['last_name'],
+                address = form.cleaned_data['address'],
+                shipping_method = form.cleaned_data['shipping_method']
+            )
+            order.save()
+            return HttpResponseRedirect('/order/' + str(order.id))
+    else:
+        form = OrderForm()
+    return render(request, 'sklep/order_form.html', {
+        "form":form
+    })
