@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3> Reklamacja </h3>
+
+    <form action="/complaint/" method = "post">
+        {% csrf_token %}
+        {{form}}
+        <input type = "submit" value="Złóż reklamacje">
+    </form>
+{% endblock %}

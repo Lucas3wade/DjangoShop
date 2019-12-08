@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2> Szczegóły reklamacji </h2>
+    <ul>
+        <li>
+            <h4>Nadawca: {{complaint.name}}</h4>
+        </li>
+        <li>
+            <h4>Treść: {{complaint.message}}</h4>
+        </li>
+    </ul>
+{%endblock%}

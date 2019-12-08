@@ -14,21 +14,24 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
-    shipping_method = models.CharField(max_length=100)
+    delivery = models.CharField(max_length=100)
     products = models.ManyToManyField("Product", through="OrderedProducts")
 
     def get_total_price(self):
         total = 0
         ordered_products = OrderedProducts.objects.filter(order=self)
         for ordered_product in ordered_products:
-            total+=ordered_product.amount * ordered_product.product.price
+            total += ordered_product.amount * ordered_product.product.price
         return total
 
+    def get_all_products(self):
+        ordered_products = OrderedProducts.objects.filter(order=self)
+        return list(ordered_products)
+
     def __str__(self):
-        return self.first_name + ' ' + self.last_name
+        return self.name
 
 
 class OrderedProducts(models.Model):
@@ -36,3 +39,7 @@ class OrderedProducts(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     amount = models.IntegerField(default=1)
 
+
+class Complaint(models.Model):
+    name = models.CharField(max_length=100)
+    message = models.CharField(max_length=1000)

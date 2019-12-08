@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2> Zamówione produkty:</h2>
+    <ul>
+        {% for op in ordered_products %}
+        <li>
+            <h3>Nazwa: {{op.product.name}}   Cena: {{op.product.price}} zł.    Ilosc: {{op.amount}} szt.</h3>
+        </li>
+        {% endfor %}
+    </ul>
+    <h3> Łączna wartość produktów w koszyku: {{total_price}}</h3>
+{%endblock%}
