@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f174c75-0dae-42ed-b8a0-9579693296de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/complaint_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/complaint_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/migrations/0002_order.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/migrations/0003_auto_20191205_1627.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/glowna.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/main_site.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/main_site.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
