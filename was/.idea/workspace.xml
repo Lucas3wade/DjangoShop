@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f174c75-0dae-42ed-b8a0-9579693296de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +82,10 @@
     </state>
     <state x="346" y="38" key="SettingsEditor/67.27.1301.741@67.27.1301.741" timestamp="1575562749809" />
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1575409091941" />
-    <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1575831713546">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="476" y="275" key="com.intellij.ide.util.TipDialog" timestamp="1576675033578">
+      <screen x="67" y="27" width="1301" height="741" />
     </state>
-    <state x="476" y="275" key="com.intellij.ide.util.TipDialog/67.27.1301.741@67.27.1301.741" timestamp="1575562386211" />
+    <state x="476" y="275" key="com.intellij.ide.util.TipDialog/67.27.1301.741@67.27.1301.741" timestamp="1576675033578" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1575831713546" />
   </component>
 </project>

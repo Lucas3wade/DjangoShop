@@ -9,5 +9,10 @@
             <h4>Waga: {{product.weight}}</h4>
         </li>
     </ul>
+    <form action="/cart/add/" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="item_id" value="{{product.id}}">
+        <input type="submit" value="Dodaj do koszyka">
+    </form>
 <h3><a href="/products"><=Wróć </a></h3>
 {%endblock%}

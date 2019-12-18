@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <ul>
+        {% for product in products %}
+            <li>{{product.name}} {{product.price}}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/order/"> Złóż zamówienie</a></p>
+    <p><a href="/products/"> Lista produktów</a></p>
+{% endblock %}

@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 
 from .forms import OrderForm, ComplaintForm
-from .models import Product, Order, Complaint
+from .models import Product, Order, Complaint, OrderedProducts
 
 
 # Create your views here.
@@ -31,6 +31,8 @@ def product_details(request, product_id):
 
 
 def order(request):
+    products_to_order = _get_products_in_cart(request)
+
     if request.method == "POST":
         form = OrderForm(request.POST)
         if form.is_valid():
@@ -40,11 +42,18 @@ def order(request):
                 delivery=form.cleaned_data['delivery']
             )
             order.save()
+
+            for product in products_to_order:
+                ordered_product = OrderedProducts(
+                    product = product, order = order, amount = 1
+                ).save()
+                request.session['cart'] = []
+
             return HttpResponseRedirect('/order/' + str(order.id))
     else:
         form = OrderForm()
     return render(request, 'sklep/order_form.html', {
-        "form": form
+        "form": form, "products": products_to_order
     })
 
 
@@ -83,3 +92,28 @@ def complaint_details(request, complaint_id):
         request,
         "sklep/complaint_details.html",
         context)
+
+
+def cart(request):
+    products_in_cart = _get_products_in_cart(request)
+    return render(request, "sklep/cart.html", {"products": products_in_cart})
+
+
+def add_to_cart(request):
+    if request.method == "POST":
+        if 'cart' not in request.session:
+            request.session['cart'] = []
+
+        item_id = request.POST['item_id']
+        request.session['cart'].append(item_id)
+        request.session.modified = True
+
+    return HttpResponseRedirect('/cart')
+
+
+def _get_products_in_cart(request):
+    products_in_cart = []
+    for item_id in request.session.get('cart', []):
+        product = Product.objects.get(pk=item_id)
+        products_in_cart.append(product)
+    return products_in_cart
