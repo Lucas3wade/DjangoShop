@@ -9,4 +9,7 @@
         {% endfor %}
     </ul>
     <h3> Łączna wartość produktów w koszyku: {{total_price}}</h3>
+    <h3> Wykorzystany kod rabatowy: {{order_discount_code}}, uzyskany rabat: {{order_discount_value}}%</h3>
+    <h3> Łączna wartość produktów w koszyku po zniżce: {{total_price_after_discount}}</h3>
+    <h3><a href="/products"><=Wróć do sklepu </a></h3>
 {%endblock%}

@@ -14,5 +14,19 @@
         <input type="hidden" name="item_id" value="{{product.id}}">
         <input type="submit" value="Dodaj do koszyka">
     </form>
+    <h3>Ocena produktu wynosi: <br> {{grade}}</h3>
+    <h3>Komentarze produktu:</h3>
+    <ul>
+        {% for opinion in comments %}
+        <li>
+            <h3>{{opinion.comment}}</h3>
+        </li>
+        {% endfor %}
+    </ul>
+    <form action="/product/{{product.id}}" method = "post">
+        {% csrf_token %}
+        {{form}}
+        <input type = "submit" value="Skomentuj!">
+    </form>
 <h3><a href="/products"><=Wróć </a></h3>
 {%endblock%}

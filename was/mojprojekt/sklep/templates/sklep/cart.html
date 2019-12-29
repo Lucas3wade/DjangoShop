@@ -1,10 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
     <ul>
-        {% for product in products %}
-            <li>{{product.name}} {{product.price}}</li>
+        {% for product, amount in products %}
+            <li>Produkt: {{product.name}} Cena: {{product.price}} Ilość: {{amount}}
+                <form action="/cart/delete/" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_id" value="{{product.id}}">
+                    <input type="submit" value="Usuń z koszyka">
+                </form>
+                <form action="/cart/change/" method="post">
+                    {% csrf_token %}
+                    <label for="Amount">Liczba w koszyku </label>
+                    <input id="Amount" type="text" name="amount" value="{{amount}}">
+                    <input type="hidden" name="item_id" value="{{product.id}}">
+                    <input type="submit" value="Zmień">
+                </form>
+            </li>
         {% endfor %}
     </ul>
+    <p> Całkowity koszt: {{total_price}} </p>
     <p><a href="/order/"> Złóż zamówienie</a></p>
     <p><a href="/products/"> Lista produktów</a></p>
 {% endblock %}

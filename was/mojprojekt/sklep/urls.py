@@ -10,5 +10,8 @@ urlpatterns = [
     path("complaint/", views.complaint),
     path("complaint/<int:complaint_id>", views.complaint_details),
     path("cart/", views.cart),
-    path("cart/add/", views.add_to_cart)
+    path("cart/add/", views.add_to_cart),
+    path("cart/delete/", views.delete_from_cart),
+    path("cart/change/", views.change_cart),
+    path("product_details/", views.product_details)
 ]

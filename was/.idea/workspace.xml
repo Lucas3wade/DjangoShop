@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f174c75-0dae-42ed-b8a0-9579693296de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/order_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/templates/sklep/product_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mojprojekt/sklep/urls.py" afterDir="false" />
